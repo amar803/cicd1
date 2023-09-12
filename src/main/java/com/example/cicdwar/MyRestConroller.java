@@ -9,6 +9,8 @@ public class MyRestConroller {
     @GetMapping("/hello")
     public ResponseEntity<String> helloController(){
         String message = "Hello, World!";
-        return ResponseEntity.ok(message);
+        String message2 = "Hello, World!";
+        return ResponseEntity.ok(message+message2);
+
     }
 }
